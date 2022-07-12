@@ -1,6 +1,6 @@
 import { ChainId } from '@sushiswap/chain'
 
-export const SUPPORTED_CHAINS = [
+export const LEGACY_SUPPORTED_CHAINS = [
   ChainId.ARBITRUM,
   ChainId.AVALANCHE,
   ChainId.BSC,
@@ -32,4 +32,14 @@ export const LEGACY_SUBGRAPH_NAME: Record<string | number, string> = {
   [ChainId.MOONRIVER]: 'sushiswap/moonriver-exchange',
   [ChainId.FUSE]: 'sushiswap/fuse-exchange',
   [ChainId.POLYGON]: 'sushiswap/matic-exchange',
+}
+
+export const TRIDENT_SUPPORTED_CHAINS = [
+  ChainId.OPTIMISM,
+  //ChainId.KAVA
+]
+
+export const TRIDENT_SUBGRAPH_NAME: Record<string | number, string> = {
+  [ChainId.OPTIMISM]: 'sushiswap/optimism-exchange',
+  //[ChainId.KAVA]: ''
 }

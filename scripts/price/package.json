@@ -48,9 +48,10 @@
     "@graphql-mesh/transform-rename": "0.12.48",
     "@graphql-mesh/transform-type-merging": "0.4.2",
     "@graphql-mesh/utils": "0.35.2",
+    "@sushiswap/core-sdk": "1.0.0-canary.34",
+    "date-fns": "^2.x",
     "dotenv": "16.x",
-    "graphql": "^16.5.0",
-    "date-fns": "^2.x"
+    "graphql": "^16.5.0"
   },
   "devDependencies": {
     "@graphprotocol/client-cli": "1.0.1",

@@ -7,7 +7,18 @@ sources:
       - prefix:
           value: legacy_exchange_
           includeRootOperations: true
-          includeTypes: false
+          includeTypes: true
+      - autoPagination:
+          validateSchema: true
+  - name: Trident
+    handler:
+      graphql:
+        endpoint: https://{context.host:api.thegraph.com}/subgraphs/name/{context.name:sushiswap/trident-polygon}
+    transforms:
+      - prefix:
+          value: trident_
+          includeRootOperations: true
+          includeTypes: true
       - autoPagination:
           validateSchema: true
 
